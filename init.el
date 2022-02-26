@@ -120,11 +120,17 @@
 (setq lisp-indent-offset tab-width)
 (setq c-basic-offset tab-width)
 (setq rust-indent-offset tab-width)
+(setq python-indent-offset tab-width)
 
 ;; rust
 (use-package rust-mode
     :ensure t
     :config (require 'rust-mode))
+
+;; GLSL
+(use-package glsl-mode
+    :ensure t
+    :config (require 'glsl-mode))
 
 ;; turn on and set up EVIL mode
 (use-package evil
