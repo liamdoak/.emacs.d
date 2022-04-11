@@ -130,7 +130,12 @@
 ;; GLSL
 (use-package glsl-mode
     :ensure t
-    :config (require 'glsl-mode))
+    :config
+    (require 'glsl-mode)
+    (add-hook 'glsl-mode-hook
+        (lambda ()
+            (setq-local electric-indent-chars '(?{ ?} ?\n))
+            (setq-local electric-indent-inhibit nil))))
 
 ;; turn on and set up EVIL mode
 (use-package evil
