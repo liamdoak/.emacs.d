@@ -107,6 +107,7 @@
 
 ;; fix indentation
 (c-set-offset 'arglist-cont-nonempty '+)
+(c-set-offset 'arglist-intro '+)
 (c-set-offset 'brace-list-intro '+)
 (c-set-offset 'case-label '+)
 (c-set-offset 'inextern-lang '-)
