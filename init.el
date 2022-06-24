@@ -139,6 +139,12 @@
             (setq-local electric-indent-chars '(?{ ?} ?\n))
             (setq-local electric-indent-inhibit nil))))
 
+;; ninja
+(use-package ninja-mode
+    :ensure t
+    :config (require 'ninja-mode))
+    
+
 ;; turn on and set up EVIL mode
 (use-package evil
     :ensure t
