@@ -144,6 +144,10 @@
     :ensure t
     :config (require 'ninja-mode))
     
+;; markdown
+(use-package markdown-mode
+    :ensure t
+    :config (require 'markdown-mode))
 
 ;; turn on and set up EVIL mode
 (use-package evil
