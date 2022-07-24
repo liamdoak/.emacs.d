@@ -154,15 +154,9 @@
     :ensure t
     :config
     (evil-mode)
+    (evil-set-undo-system 'undo-redo)
     (setq evil-overriding-maps nil)
     (setq evil-intercept-maps nil))
-
-;; set up undo system
-(use-package undo-tree
-    :ensure t
-    :config
-    (global-undo-tree-mode)
-    (evil-set-undo-system 'undo-tree))
 
 ;; bind keys with general
 (use-package general
